@@ -1,5 +1,5 @@
 FROM node:alpine as builder
-RUN npm install -g yarn
+# RUN npm install -g yarn
 WORKDIR /app
 COPY package.json .
 RUN yarn install
