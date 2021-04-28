@@ -6,8 +6,8 @@ services:
 before_install:
   - docker build -t ropenflash/docker-react  .
 
-script:
-  - docker run -e CI=true ropenflash/docker-react yarn test -- --coverage
+# script:
+#   - docker run -e CI=true ropenflash/docker-react yarn test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
