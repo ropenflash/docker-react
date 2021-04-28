@@ -11,11 +11,11 @@ before_install:
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "docker-react"
-  env: "Dockerreact-env"
-  bucket_name: "elasticbeanstalk-us-east-2-779826854614"
-  bucket_path: "docker-react"
+  region: 'us-east-2'
+  app: 'firstapp'
+  env: 'Firstapp-env'
+  bucket_name: 'elasticbeanstalk-us-east-2-779826854614'
+  bucket_path: 'firstapp'
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
